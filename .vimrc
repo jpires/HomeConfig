@@ -17,3 +17,5 @@ set autoindent      " Copy indent from current line when starting a new line
                     " command).
 filetype plugin indent on
 syntax on
+colorscheme desert
+set cindent
