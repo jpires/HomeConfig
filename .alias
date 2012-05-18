@@ -1,0 +1,30 @@
+#Navigation
+alias ..='cd ..'
+alias cd..='cd ..'
+alias ~='cd ~'
+
+alias mkdir='mkdir -p -v'
+alias rm='rm -i'
+alias df='df -hT | egrep -i "file|^/"'
+alias du='du -h -c'
+
+#ls alias
+eval $(dircolors -b) # Test Symlinks
+alias ls='ls -CFh --color=auto'
+alias ll='ls -al'
+alias la='ls -A'
+
+alias grep='grep --color=auto'
+alias diff='colordiff' # requires colordiff package
+
+alias ping='ping -c 5'
+alias date='date "+%A, %d %B, %Y [%T]"'
+
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+alias orphans='pacman-color -Qtdq'
+alias upgrade='yaourt -Syu --aur'
+
+alias free='free -mt'
