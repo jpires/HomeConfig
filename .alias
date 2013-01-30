@@ -18,7 +18,7 @@ alias grep='grep --color=auto'
 alias diff='colordiff' # requires colordiff package
 
 alias ping='ping -c 5'
-alias date='date "+%A, %d %B, %Y [%T]"'
+#alias date='date "+%A, %d %B, %Y [%T]"'
 
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'

@@ -1,6 +1,6 @@
-function start() { sudo /etc/rc.d/$1 start; }
-function stop() { sudo /etc/rc.d/$1 stop; }
-function restart() { sudo /etc/rc.d/$1 restart; }
+function start() { sudo systemctl start $1; }
+function stop() { sudo systemctl stop $1; }
+function restart() { sudo systemctl restart $1; }
 
 # Creates an archive from given directory
 mktgz() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
