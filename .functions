@@ -4,17 +4,3 @@ function restart() { sudo systemctl restart $1; }
 
 # Creates an archive from given directory
 mktgz() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
-
-
-# s - gnu screen function
-# usage: lists screen sessions, otherwise
-#        s <name> reattaches to <name>, otherwise
-#        s <name> creates a new session <name>.
-s ()
-{
-  if [[ $1 ]]; then
-      screen -dRR -S $HOSTNAME.$1
-  else
-      screen -ls
-  fi
-}
